@@ -1,22 +1,54 @@
 *{
     box-sizing: border-box;
 }
+.navBarCv{
+    margin-left: auto;
+}
+.show .nav-item{
+    width: 100%;
+    text-align: center;
+}
+.show .navBarCv{
+    width: 100%;
+    align-items: center;
+}
+.navBarColor{
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+}
+.navBarColor.active{
+    background-color: #bfb8b882;
+}
+.spanDownloadCv{
+    font-size: 1em;
+}
 .navbar-toggler:focus{
     box-shadow: none !important;
 }
-.navbarCV{
-    display: flex;
-    text-align: center;
-    justify-content: end;
+
+.imageHeader{
+    background-image: url(/assets/imageHeader.png);    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.logoCv{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    background-color: white;
 }
 .nav-link:hover {
-    background-color: aqua;
     font-weight: 700;
     border-radius: 5px;
 }
 .show{
     display: flex;
     justify-content: center;
+}
+.sidebarCv{
+    width: 16.66666667%;
 }
 .imgNav{
     width: 50px;
@@ -28,12 +60,6 @@
 .heightCalculate{
     height: calc(100vh - 58px);
     padding-top: 58px;
-}
-.aboutme{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
 }
 .imageCv img{
     height: 12em;
@@ -50,17 +76,26 @@
 }
 .experienceDescription{
     margin-top: 1em;
-
 }
-.hardSkillsList{
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.skillsList{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.hardSkillItem{
+.skillItem{
     width: 8em;
     margin: .5em 0px;
+}
+.imgSkill{
+    height: 36px;
+    width: 36px;
 }
 .title{
     font-size: 2em;

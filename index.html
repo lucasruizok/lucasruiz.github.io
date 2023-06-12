@@ -16,108 +16,61 @@
 
 <body>
     <div>
-        <div class="row">
-            <!-- sidebar -->
-            <div class="col-lg-2 p-3 text-white bg-dark position-fixed h-100">      
-                    <div>
-                        <a href="/index.html"
-                            class="d-flex align-items-center mb-3 text-decoration-none">
-                            <span class="fs-4">LR</span>
-                        </a>
-                    </div>
-                    <hr>
-                    <div>
-                        <ul class="nav nav-pills flex-column mb-auto">
-                            <li>
-                                <a href="/index.html" class="nav-link">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#aboutMe" class="nav-link">
-                                    About me
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#skills" class="nav-link">
-                                    Skills
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">
-                                    Projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div>
-                        <ul class="nav">
-                            <li>
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-opacity-10  navBarColor fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span><</span> 
+                    <span>LR</span>
+                    <span>></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navBarCv mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                  </svg>
+                                <span class="spanDownloadCv">CV</span> 
+                            </button>
+                        </li>
+                </div>
             </div>
-            <div class="col-lg-10">
-                <!-- main -->
-                <main class="mainContainer">
-                    <div class="aboutme heightCalculate" >
-                        <div class="col-12 imageCv" id="aboutMe">
-                            <img src="/assets/perfilCv.jpg" alt="imagen de curriculum">
-                            <div class="aboutDescription">
-                                <span>Objetive</span>
-                                <p>I want to continue developing my skills and grow as a professional in the
-                                    technologies used to create web applications</p>
-                            </div>
-                        </div>
-                        <div class="col-12" id="skills">
-                            <div class="hardSkills">
-                                <h3>Hard Skills</h3>
-                                <div class="hardSkillsList">
-                                    <span class="btn btn-danger hardSkillItem">HTML</span>
-                                    <span class="btn btn-danger hardSkillItem">CSS</span>
-                                    <span class="btn btn-danger hardSkillItem">Javascript</span>
-                                    <span class="btn btn-danger hardSkillItem">React</span>
-                                    <span class="btn btn-danger hardSkillItem">Git</span>
-                                    <span class="btn btn-danger hardSkillItem">GitHub</span>
-                                    <span class="btn btn-danger hardSkillItem">Trello</span>
-                                    <span class="btn btn-danger hardSkillItem">Slack</span>
-                                    <span class="btn btn-danger hardSkillItem">Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
+        </nav>
+        <div class="imageHeader banner-image">
+
+        </div>
+        <!-- MAIN -->
+        <main class="container">
+            <!-- aboutMe -->
+            <!-- <div class="col-12 imageCv" id="aboutMe">
+                    <div class="aboutDescription">
+                        <span>Objetive</span>
+                        <p>I want to continue developing my skills and grow as a professional in the
+                            technologies used to create web applications</p>
                     </div>
-                    <div class="education heightCalculate" id="education">
+                </div> -->
+            <div class="col-12 skills" id="skills"> 
+                <div>
+                    <h3 class="mb-3">Skills</h3>
+                    <div class="skillsList d-flex flex-wrap justify-content-center gap-5" id="skillsList">
+                    </div>
+                </div>
+            </div>
+            <!-- Education -->
+            <!-- <div class="education" id="education">
                         <div class="col-12 col-md-6">
                             <h3 class="title mb-5">Education</h3>
                             <h4>National Technological University</h4>
@@ -133,27 +86,24 @@
                             <h4 class="expTitle">Freelance - 2022</h4>
                             <p class="experienceDescription">RollingFood Web (React and nodejs)</p>
                         </div>
+                    </div> -->
+            <div id="projects">
+                <h3>Projects</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/imgRollingFood.png" class="card-img-top" alt="image Rolling Food project">
+                    <div class="card-body">
+                        <h5 class="card-title">Rolling Food</h5>
+                        <p class="card-text">Project made with React, nodejs, bootstrap</p>
+                        <button disabled href="#" class="btn btn-primary shadow-lg">Visit website ></button>
                     </div>
-                    <div class="portfolio heightCalculate" id="portfolio">
-                        <h3>Portfolio</h3>
-                        <div class="card" style="width: 18rem;">
-                            <img src="/assets/imgRollingFood.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Rolling Food</h5>
-                                <p class="card-text">Project made with React, nodejs, bootstrap</p>
-                                <p class="card-text">Project made with React, nodejs, bootstrap</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        </div>
-
+                </div>
+        </main>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+    <script src="/index.js"></script>
 </body>
 
 </html>
